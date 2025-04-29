@@ -85,14 +85,8 @@
       <input type="tel" class="form-control" id="phone" name="phone" placeholder="+7 123 456 7890" required>
     </div>
 
-    <!-- Additional Information -->
-    <div class="mb-3">
-      <label for="info" class="form-label">Дополнительная информация</label>
-      <textarea class="form-control" id="info" name="extra" placeholder="Школа, организация..."></textarea>
-    </div>
-
     <!-- Role Selection -->
-    <div class="mb-4">
+    <div class="mb-3">
       <label class="form-label">Регистрируюсь как</label>
       <select class="form-select" name="role" required>
         <option value="">Выберите роль...</option>
@@ -101,9 +95,27 @@
       </select>
     </div>
 
+    <!-- Password -->
+    <div class="mb-3">
+      <label for="password" class="form-label">Пароль</label>
+      <input type="password" class="form-control" id="password" name="password" placeholder="Введите пароль" required>
+    </div>
+
+    <!-- Additional Information -->
+    <div class="mb-3">
+      <label for="info" class="form-label">Дополнительная информация</label>
+      <textarea class="form-control" id="info" name="extra" placeholder="Школа, организация..."></textarea>
+    </div>
+
     <!-- Submit Button -->
     <div class="d-grid">
       <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
+    </div>
+
+
+    <!-- Login Link -->
+    <div class="text-center mt-3">
+      <p>Уже есть аккаунт? <a href="/enter_with_email">Войти</a></p>
     </div>
 
   </form>
