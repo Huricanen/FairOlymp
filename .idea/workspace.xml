@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a201568a-6ede-4184-abd7-62cc4f0601af" name="Changes" comment="" />
+    <list default="true" id="a201568a-6ede-4184-abd7-62cc4f0601af" name="Changes" comment="Сделана первая строничка и добавлен основной исполняющий файл. Сделан вывод данных из формы регистрации.">
+      <change afterPath="$PROJECT_DIR$/templates/enter_with_email.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/enter_with_phone.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/register_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/register_form.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -40,15 +47,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Huricanen&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "Huricanen"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ifosk\PycharmProjects\FairOlymp" />
@@ -94,6 +102,30 @@
       <option name="presentableId" value="Default" />
       <updated>1745685724808</updated>
     </task>
+    <task id="LOCAL-00001" summary="Сделана первая строничка и добавлен основной исполняющий файл. Сделан вывод данных из формы регистрации.">
+      <option name="closed" value="true" />
+      <created>1745688241891</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1745688241891</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Сделана первая строничка и добавлен основной исполняющий файл. Сделан вывод данных из формы регистрации." />
+    <option name="LAST_COMMIT_MESSAGE" value="Сделана первая строничка и добавлен основной исполняющий файл. Сделан вывод данных из формы регистрации." />
   </component>
 </project>
