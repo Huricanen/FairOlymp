@@ -49,6 +49,14 @@
   <h2>Вход</h2>
   <form method="POST" action="/enter_with_phone">
 
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div class="alert alert-{{ category }}">{{ message }}</div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+
     <!-- Phone -->
     <div class="mb-3">
       <label for="phone" class="form-label">Телефон</label>
