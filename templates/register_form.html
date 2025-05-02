@@ -48,41 +48,53 @@
 <div class="form-container">
   <h2>Регистрация</h2>
   <form method="POST" action="/register">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div class="alert alert-{{ category }}">{{ message }}</div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
 
     <!-- Surname -->
     <div class="mb-3">
       <label for="surname" class="form-label">Фамилия</label>
-      <input type="text" class="form-control" id="surname" name="surname" placeholder="Иванов" required>
+      <input type="text" class="form-control" id="surname" name="surname" placeholder="Иванов" value="{{surname}}"
+             required>
     </div>
 
     <!-- First Name -->
     <div class="mb-3">
       <label for="firstName" class="form-label">Имя</label>
-      <input type="text" class="form-control" id="firstName" name="firstname" placeholder="Иван" required>
+      <input type="text" class="form-control" id="firstName" name="firstname" placeholder="Иван" value="{{firstname}}"
+             required>
     </div>
 
     <!-- Middle Name -->
     <div class="mb-3">
       <label for="middleName" class="form-label">Отчество</label>
-      <input type="text" class="form-control" id="middleName" name="midname" placeholder="Иванович">
+      <input type="text" class="form-control" id="middleName" name="midname" placeholder="Иванович" value="{{midname}}">
     </div>
 
     <!-- City -->
     <div class="mb-3">
       <label for="city" class="form-label">Город</label>
-      <input type="text" class="form-control" id="city" name="city" placeholder="Ваш город" required>
+      <input type="text" class="form-control" id="city" name="city" placeholder="Ваш город" value="{{city}}"
+             required>
     </div>
 
     <!-- Email -->
     <div class="mb-3">
       <label for="email" class="form-label">Электронная почта</label>
-      <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required>
+      <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com"
+             value="{{email}}" required>
     </div>
 
     <!-- Phone Number -->
     <div class="mb-3">
       <label for="phone" class="form-label">Телефон</label>
-      <input type="tel" class="form-control" id="phone" name="phone" placeholder="+7 123 456 7890" required>
+      <input type="tel" class="form-control" id="phone" name="phone" placeholder="+7 123 456 7890" value="{{phone}}"
+             required>
     </div>
 
     <!-- Role Selection -->
@@ -98,7 +110,8 @@
     <!-- Password -->
     <div class="mb-3">
       <label for="password" class="form-label">Пароль</label>
-      <input type="password" class="form-control" id="password" name="password" placeholder="Введите пароль" required>
+      <input type="password" class="form-control" id="password" name="password" placeholder="Введите пароль"
+             value="{{pswd}}" required>
     </div>
 
     <!-- Additional Information -->

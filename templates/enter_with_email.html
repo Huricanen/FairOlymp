@@ -49,16 +49,26 @@
   <h2>Вход</h2>
   <form method="POST" action="/enter_with_email">
 
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div class="alert alert-{{ category }}">{{ message }}</div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+
     <!-- Email -->
     <div class="mb-3">
       <label for="email" class="form-label">Электронная почта</label>
-      <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required>
+      <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com"
+             value="{{email}}" required>
     </div>
 
     <!-- Password -->
     <div class="mb-3">
       <label for="password" class="form-label">Пароль</label>
-      <input type="password" class="form-control" id="password" name="password" placeholder="Введите пароль" required>
+      <input type="password" class="form-control" id="password" name="password" placeholder="Введите пароль"
+             value="{{pswd}}" required>
     </div>
 
     <!-- Submit Button -->
